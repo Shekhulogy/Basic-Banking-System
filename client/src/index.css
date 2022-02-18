@@ -1,0 +1,308 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  }
+
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 1px 15px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px; 
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #3c7ef0;
+}
+
+/* Change the background color on mouse-over */
+#bank-icon {
+  height: 30px;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+.header-right a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+.intro {
+  padding: 0;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.intro .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.2);
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+  padding-left: 120px;
+}
+
+@media (max-width: 768px) {
+  .intro .content {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .intro {
+    height: 210px;
+  }
+
+  .intro img{
+    padding: 7% 0;
+    box-sizing: border-box;
+  }
+
+  .intro .content {
+    padding-left: 20px;
+    font-size: 0.8rem;
+    height: 84%;
+  }
+}
+
+#bank1-img {
+  width: 100%;
+  height: 15rem;
+}
+
+.middel-section{
+  width: 100%;
+  padding: 40px 200px;
+  box-sizing: border-box;
+  display: flex;
+  
+}
+
+.middel-left {
+ margin-right: 13rem;
+}
+
+.middel {
+  margin-right: 13rem;
+}
+
+@media (max-width: 768px) {
+  .middel-section {
+    padding: 30px 20px;
+    margin-bottom: 30%;
+  }
+
+  .middel-left {
+    margin-right: 3rem;
+  }
+
+  .middel {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .middel-section {
+    display: block;
+    padding: 40px 155px;
+    overflow: auto;
+    margin-bottom: 40%;
+  }
+
+  .middel-left {
+    margin-bottom: 4rem;
+  }
+
+  .middel {
+    margin-bottom: 4rem;
+  }
+  
+}
+
+#audience-img {
+  margin-left: 15px;
+  width: 150px;
+  height: 120px;
+}
+
+#transfer-img {
+  margin-left: 15px;
+  width: 150px;
+  height: 120px;
+}
+
+#transaction-img {
+  margin-left: 15px;
+  width: 150px;
+  height: 120px;
+}
+
+#middel-btn {
+  width: 180px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: dodgerblue;
+  outline: none;
+  border: none;
+  color: #f1f1f1;
+  font-size: 1rem;
+  
+}
+
+#middel-btn:hover {
+  cursor: pointer;
+  background-color: royalblue;
+  transition: all 0.4s ease-out;
+}
+
+/*yaha se start karna hai kal*/
+
+.footer-container{
+  width: 100%;
+  background-color: #212329;
+  bottom: 0px;
+  position: fixed;
+  
+}
+
+.footer {
+  width: 80%;
+  height: 120px;
+  background-color: #212329;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: auto;
+  margin: 0 auto;
+  
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8rem;
+  margin-top: 0.5%;
+}
+
+.footer-heading h3 {
+  margin-bottom: 1rem;
+}
+
+.footer-email-section h3 {
+  margin-bottom: 1rem;
+}
+
+#footer-email {
+  width: 193px;
+  height: 25px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#footer-email::placeholder {
+  color: #b1b1b1;
+}
+
+#footer-email-btn {
+  width: 80px;
+  height: 25px;
+  border-radius: 4px;
+  background-color: #F9423D;
+  outline: none;
+  border: none;
+  color: #f1f1f1;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+#footer-email-btn:hover {
+  cursor: pointer;
+  background-color: #337af1;
+  transition: all 0.4s ease-out;
+}
+
+.footer-container .footer-bottom {
+  background: #343a40;
+  color: #686868;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+  .footer {
+    height: 30vh;
+  }
+  .footer-email-section {
+    margin-top: 4rem;
+  }
+  
+}
+
+@media screen and (max-width: 820px) {
+  .footer {
+    padding-top: 2rem;
+  }
+  
+}
+
+@media screen and (max-width: 720px) {
+  .footer-1 {
+    display: none;
+  }
+  .footer-email-section {
+    margin-top: 0rem;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .footer-heading{
+    margin-right: 50px;
+  }
+  
+}
