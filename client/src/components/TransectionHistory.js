@@ -35,8 +35,8 @@ function TransectionHistory() {
                   <td data-label="Sender">{curTransecton.sender}</td>
                   <td data-label="Reciver">{curTransecton.reciver}</td>
                   <td data-label="Transferd Money">{curTransecton.amount}</td>
-                  <td data-label="Date">{curTransecton.date.format("DD/MM/YYYY").slice(0, 9)}</td>
-                  <td data-label="Time">{curTransecton.date.format("DD/MM/YYYY").slice(11, 19)}</td>
+                  <td data-label="Date">{curTransecton.date.slice(0, 9)}</td>
+                  <td data-label="Time">{curTransecton.date.slice(11, 19)}</td>
                 </tr>
               ))}
           </tbody>
