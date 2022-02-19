@@ -8,7 +8,8 @@ const CustomerSchema = new mongo.Schema({
     },
     email : {
         type : String,
-        required : true
+        required : true,
+        unique: true
     },
     current_balance : Number,
     gender : String,

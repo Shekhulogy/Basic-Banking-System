@@ -16,7 +16,7 @@ const HistorySchema = new mongo.Schema({
     },
     date : {
          type: String,
-         default: new Date().toLocaleString("en-US", {timeZone:"Asia/Kolkata"})
+         default: new Date().toLocaleString("en-US", {timeZone:"Asia/Delhi"})
     }
 
 })

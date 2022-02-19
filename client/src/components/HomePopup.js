@@ -34,7 +34,7 @@ function HomePopup(closeHomePopup) {
   const submitTransactionHistory = async (event) => {
 
     event.preventDefault();
-    
+
     if (sender !== reciver) {
       await axios.post("https://basicbankingsystembbs.herokuapp.com/transection-history", {
         amount,
@@ -43,6 +43,7 @@ function HomePopup(closeHomePopup) {
       });
 
       alert("!! Transection Successfull !!");
+      closeHomePopup(false);
     } else {
       alert("Sender and Reciver should not be same !");
     }
