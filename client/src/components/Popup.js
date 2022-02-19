@@ -26,6 +26,8 @@ function Popup({ closePopup, sender, emails }) {
       });
 
       alert("!! Transection Successfull !!");
+
+      closePopup(false);
     } else {
       alert("Sender and Reciver should not be same !");
     }
