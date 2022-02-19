@@ -18,9 +18,9 @@ function Home() {
     setSubscriber(event.target.value);
   };
 
-  const submitSubscriber = () => {
-    return axios
-      .post("http://localhost:8080/subscribers", { email: subscriber })
+  const submitSubscriber = async () => {
+    return await axios
+      .post("https://basicbankingsystembbs.herokuapp.com/subscribers", { email: subscriber })
       .then(() => {
         setSubscriber('')
       });
