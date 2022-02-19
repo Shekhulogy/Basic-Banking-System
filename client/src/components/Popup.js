@@ -5,27 +5,27 @@ import { useState } from "react";
 import { Dropdown } from "semantic-ui-react";
 import axios from "axios";
 
-function Popup({ closePopup, sender, emails }) {
+function Popup({ closePopup, reciver, emails }) {
   const [amount, setAmount] = useState();
-  const [reciver, setReciver] = useState();
+  const [sender, setSender] = useState();
 
   const handleAmountChange = (event) => {
     setAmount(event.target.value);
   };
 
-  const handleReciverChange = (value) => {
-    setReciver(value);
+  const handleSenderChange = (value) => {
+    setSender(value);
   };
 
   const submitTransactionHistory = async (event) => {
 
     event.preventDefault();
-    
+
     if (sender !== reciver) {
       await axios.post("https://basicbankingsystembbs.herokuapp.com/transection-history", {
         amount,
-        reciver,
-        sender: sender.email,
+        reciver: reciver.email,
+        sender,
       });
 
       alert("!! Transection Successfull !!");
@@ -61,25 +61,28 @@ function Popup({ closePopup, sender, emails }) {
             >
               x
             </button>
-            <input
+            <Dropdown
               type="text"
               placeholder="Sender Email"
               id="popup-input-1"
               name="sender"
-              autoFocus={true}
-              value={sender.email}
-              disabled
-            ></input>
-
-            <Dropdown
-              placeholder="Select Reciver"
-              name="reciver"
               fluid
               search
               selection
-              value={reciver}
+              autoFocus={true}
+              value={sender}
               options={emailOptions}
-              onChange={(_, data) => handleReciverChange(data.value)}
+              onChange={(_, data) => handleSenderChange(data.value)}
+            />
+
+            <input
+              type="text"
+              placeholder="Select Reciver"
+              id="popup-input-2"
+              name="reciver"
+              value={reciver.email}
+              disabled
+              
             />
 
             <input

@@ -100,7 +100,7 @@ function ViewAllCustomer() {
         </table>
       </div>
 
-      {openPopup && <Popup closePopup={setOpenPopup} sender={selectedUser} emails={emails}/>}
+      {openPopup && <Popup closePopup={setOpenPopup} reciver={selectedUser} emails={emails}/>}
       {openInfoPopup && <InfoPopup closeInfoPopup={setInfoOpenPopup} user={selectedUser}/>}
     </>
   );
