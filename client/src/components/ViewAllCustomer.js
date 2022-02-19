@@ -15,7 +15,7 @@ function ViewAllCustomer() {
   const emails = users.map((user) => user.email != selectedUser.email && user.email);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/users")
+    axios.get("https://basicbankingsystembbs.herokuapp.com/users")
       .then((res) => setUsers(res.data));
   }, []);
 

@@ -7,7 +7,7 @@ function TransectionHistory() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/transection-history")
+      .get("https://basicbankingsystembbs.herokuapp.com/transection-history")
       .then((res) => setTransections(res.data));
   }, []);
 

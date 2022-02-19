@@ -19,7 +19,7 @@ function Popup({ closePopup, sender, emails }) {
 
   const submitTransactionHistory = async () => {
     if (sender !== reciver) {
-      await axios.post("http://localhost:8080/transection-history", {
+      await axios.post("https://basicbankingsystembbs.herokuapp.com//transection-history", {
         amount,
         reciver,
         sender: sender.email,
