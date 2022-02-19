@@ -25,9 +25,9 @@ function Popup({ closePopup, sender, emails }) {
         sender: sender.email,
       });
 
-      window.alert("!! Transection Successfull !!");
+      alert("!! Transection Successfull !!");
     } else {
-      window.alert("Sender and Reciver should not be same !");
+      alert("Sender and Reciver should not be same !");
     }
   };
 
