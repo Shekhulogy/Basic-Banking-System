@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { Dropdown } from "semantic-ui-react";
 import axios from "axios";
 
-function HomePopup(closeHomePopup) {
+function HomePopup({closeHomePopup}) {
   const [amount, setAmount] = useState();
   const [reciver, setReciver] = useState();
   const [sender, setSender] = useState();
@@ -31,9 +31,9 @@ function HomePopup(closeHomePopup) {
     setSender(value);
   };
 
-  const submitTransactionHistory = async (event) => {
+  const submitTransactionHistory = async (e) => {
 
-    event.preventDefault();
+    e.preventDefault();
 
     if (sender !== reciver) {
       await axios.post("https://basicbankingsystembbs.herokuapp.com/transection-history", {
@@ -43,6 +43,7 @@ function HomePopup(closeHomePopup) {
       });
 
       alert("!! Transection Successfull !!");
+
       closeHomePopup(false);
     } else {
       alert("Sender and Reciver should not be same !");
