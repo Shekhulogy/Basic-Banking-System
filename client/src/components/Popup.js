@@ -77,7 +77,7 @@ function Popup({ closePopup, reciver, emails }) {
 
             <input
               type="text"
-              placeholder="Select Reciver"
+              placeholder="Select Receiver"
               id="popup-input-2"
               name="reciver"
               value={reciver.email}

@@ -91,7 +91,7 @@ function HomePopup({closeHomePopup}) {
 
             <div className="dropdown">
               <Dropdown
-                placeholder="Select Reciver"
+                placeholder="Select Receiver"
                 name="reciver"
                 fluid
                 search
