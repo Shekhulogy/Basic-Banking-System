@@ -103,7 +103,7 @@ function Home() {
         <div className="footer-bottom">
           &copy; nationalbank.com | Designed by Shikhar Patel
         </div>
-      </div>
+          </div>
 
       {openHomePopup && <HomePopup closeHomePopup={setOpenHomePopup} />}
     </>

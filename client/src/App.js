@@ -17,6 +17,7 @@ function App() {
         <Route exact path="/transectionhistory" element={<TransectionHistory/>}/>
         <Route exact path="*" element={<Error/>} />
       </Routes>
+      
     </>
   );
 }

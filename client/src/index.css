@@ -161,10 +161,8 @@
 @media (max-width: 768px) {
   .middel-section {
     padding: 30px 20px;
-    margin-bottom: 30%;
-    margin-left: 0;
     margin-left: -60px;
-    overflow-y: auto;
+    overflow-y: 30vh;
   }
 
   .middel-left {
