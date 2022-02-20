@@ -63,8 +63,8 @@ function Home() {
         <div className="middel-right">
           <img src={transaction} id="transaction-img" alt="#"></img>
           <NavLink to="/transectionhistory">
-            <button type="submit" value="Transection History" id="middel-btn">
-              Transection History
+            <button type="submit" value="Transaction History" id="middel-btn">
+              Transaction History
             </button>
           </NavLink>
         </div>
