@@ -12,7 +12,7 @@ function Navbar() {
       <div className="header-right">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/viewallcustomers">View All Customers</NavLink>
-        <NavLink to="/transectionhistory">Transection History</NavLink>
+        <NavLink to="/transectionhistory">Transaction History</NavLink>
       </div>
     </div>
   );

@@ -94,7 +94,7 @@ function Popup({ closePopup, reciver, emails }) {
               onChange={(event) => handleAmountChange(event)}
             ></input>
             <button type="action" id="popup-btn-1">
-              Trensfer
+              Transfer
             </button>
           </div>
         </form>

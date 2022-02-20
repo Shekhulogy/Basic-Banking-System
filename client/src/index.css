@@ -126,6 +126,7 @@
   .middel-section {
     padding: 30px 20px;
     margin-bottom: 30%;
+    overflow: auto;
   }
 
   .middel-left {
