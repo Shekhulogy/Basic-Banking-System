@@ -161,7 +161,7 @@
 @media (max-width: 768px) {
   .middel-section {
     padding: 30px 20px;
-    margin-left: -55px;
+    margin-left: -62px;
     overflow-y: 30vh;
   }
 
@@ -171,7 +171,7 @@
   }
 
   .middel {
-    margin-right: 3rem;
+    margin-right: 3rem
   }
 
 }
