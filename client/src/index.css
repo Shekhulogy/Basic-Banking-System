@@ -161,7 +161,7 @@
 @media (max-width: 768px) {
   .middel-section {
     padding: 30px 20px;
-    margin-left: -60px;
+    margin-left: -55px;
     overflow-y: 30vh;
   }
 
@@ -298,8 +298,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .footer-container {
+    position: fixed;
+  }
   .footer {
-    display: block;
+    display: none;
   }
   .footer-1 {
     display: none;
