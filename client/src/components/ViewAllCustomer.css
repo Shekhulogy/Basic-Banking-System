@@ -89,6 +89,7 @@ body {
         text-align: right;
         padding-left: 50%;
         position: relative;
+        overflow-x: auto;
     }
 
     .table td::before {
